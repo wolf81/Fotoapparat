@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'kotlin-android'
 
-group = 'io.fotoapparat'
+group = 'com.github.wolf81'
 
 android {
     buildToolsVersion versions.android.buildTools
@@ -36,6 +36,8 @@ dependencies {
     testImplementation "junit:junit:${versions.test.junit}"
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit:${versions.kotlin}"
     testImplementation "org.mockito:mockito-core:${versions.test.mockito}"
+
+    implementation 'com.github.wolf81:Fotoapparat:master-SNAPSHOT'
 }
 
 ext {
